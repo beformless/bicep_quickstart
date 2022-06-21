@@ -5,7 +5,7 @@ https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/quickstart-c
 VS Marketplace Link: https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep
 
 ## Code
-'''
+```
 @minLength(3)
 @maxLength(24)
 @description('Provide a name for the storage account. Use only lower case letters and numbers. The name must be unique across Azure.')
@@ -45,4 +45,4 @@ resource examplestorage 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   }
   kind: 'StorageV2'
 }
-'''
+```

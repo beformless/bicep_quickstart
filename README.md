@@ -46,3 +46,21 @@ resource examplestorage 'Microsoft.Storage/storageAccounts@2021-02-01' = {
   kind: 'StorageV2'
 }
 ```
+
+## Upload main.bicep file into Azure - Not working
+
+## Create Resource Group
+```
+
+az group create --name exampleRG --location eastus
+```
+
+## Deploy Bicep File
+```
+az deployment group create --resource-group exampleRG --template-file main.bicep --parameters storageName=uniquename
+```
+
+## Delete Resources
+```
+az group delete --name exampleRG
+```

@@ -51,7 +51,6 @@ resource examplestorage 'Microsoft.Storage/storageAccounts@2021-02-01' = {
 
 ## Create Resource Group
 ```
-
 az group create --name exampleRG --location eastus
 ```
 
